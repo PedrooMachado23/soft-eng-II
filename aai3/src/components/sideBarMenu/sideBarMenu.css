@@ -1,0 +1,41 @@
+.sideBarContainer {
+    width: 231px;
+    height: 909px;
+    padding: 304px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(32, 122, 178, 1);
+    background-color: rgba(224, 236, 244, 1);
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.linksContainer{
+    height: 198px;
+    margin: 0px 0px 0px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.linksContainer > a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Inter';
+    font-size: 30px;
+}
+
+.logoutButton{
+    width: 84px;
+    height: 41px;
+    margin-top: auto;
+    margin-left: 96px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    border: solid rgba(32, 122, 178, 1) 1px;
+    border-radius: 16px;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: rgba(32, 122, 178, 1);
+}

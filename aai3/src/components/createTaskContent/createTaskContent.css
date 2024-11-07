@@ -1,0 +1,112 @@
+.createTaskContainer > form{
+    font-family: 'Inter';
+    font-size: 28px;
+    margin: 46px 0px 0px 65px;
+}
+
+.inputPattern{
+    border: none;
+    border-radius: 16px;
+    margin: 14px 0px 25px 0px;
+    padding: 5px 15px;
+    font-size: 24px;
+    font-family: 'Inter';
+}
+
+.inputNome{
+    width: 886px;
+    height: 51px;
+}
+
+.middleFormContainer{
+    display: flex;
+}
+
+.section1{
+    margin: 0px 96px 0px 0px;
+}
+
+.inputUsuarios{
+    width: 397px;
+    height: 51px;
+}
+
+.inputPontos{
+    width: 397px;
+    height: 51px;
+}
+
+.inputDescricao{
+    width: 890px;
+    height: 204px;
+}
+
+.createTaskButton{
+    margin: 69px 0px 0px 797px;
+    width: 151px;
+    height: 47px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(32, 122, 178, 1);
+    font-family: 'Inter';
+    font-size: 28px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.seeTaskContainer{
+    margin: 50px 0px 0px 58px;
+    max-height: 600px;
+    overflow: scroll;
+}
+
+.taskCardContainer{
+    width: 830px;
+    max-width: 830px;
+    height: 243px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    margin: 0px 0px 108px 0px;
+}
+
+.taskCardButtonContainer > button{
+    width: 113px;
+    height: 36px;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+    border-radius: 16px;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: rgba(32, 122, 178, 1);
+}
+
+.taskCardHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 830px;
+    height: 70px;
+    background-color: rgba(32, 122, 178, 1);
+    border-radius: 16px 16px 0px 0px;
+    padding: 0px 16px;
+    font-family: 'Inter';
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.textHeaderContainer{
+    max-width: 650px;
+    overflow: scroll;
+}
+
+.taskCardDescriptionContainer{
+    padding: 20px;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: rgba(32, 122, 178, 1);
+    margin: 0px 0px 25px 0px;
+    text-align: start;
+}
+
+.deleteTaskButton{
+    margin: 0px 29px 0px 562px;
+}

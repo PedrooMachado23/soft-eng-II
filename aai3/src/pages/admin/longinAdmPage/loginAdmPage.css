@@ -1,0 +1,37 @@
+.loginAdmContainer{
+    margin: 250px 0px 0px 570px;
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.loginForm > label{
+    margin-left: 5px;
+}
+
+.loginForm > input{
+    width: 314px;
+    height: 48px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(217, 217, 217, 1);
+    margin: 8px 0px 8px 0px;
+}
+
+.loginAdmButtonContainer{
+    margin: 65px 0px 0px 570px;
+}
+
+.loginAdmButtonContainer > button{
+    width: 132px;
+    height: 48px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(32, 122, 178, 1);
+    color: rgba(255, 254, 254, 1);
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+.registerAdmButton{
+    margin: 0px 50px 0px 0px;
+}

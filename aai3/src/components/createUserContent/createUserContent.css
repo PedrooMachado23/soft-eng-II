@@ -1,0 +1,175 @@
+@import '../../fonts.css';
+
+.mainContainer{
+    margin: auto;
+    width: 998px;
+    height: 804px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 16px;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.verticalBar{
+    position: absolute;
+    left: 56%;
+    top: 16.5%;
+    width: 1px;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 13px 15px 0 15px;
+}
+
+.headerButton {
+    background-color: rgba(217, 217, 217, 1);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.5s ease-out, background-color .3s ease-out, color .001s ease-out;
+}
+
+.activeButton{
+    background-color: rgba(32, 122, 178, .75);
+    color: rgba(255, 255, 255, 1);
+}
+
+.headerButton:hover{
+    background-color: rgba(32, 122, 178, .75);
+    color: rgba(255, 255, 255, 1);
+}
+
+.singleHeaderTitle{
+    transform: scale(1.1);
+    font-family: 'Inter';
+    font-size: 48px;
+    margin-top: 60px;
+}
+
+.headerTitle1{
+    transform: scale(1.1);
+    margin-left: 120px;
+    font-family: 'Inter';
+    font-size: 26px;
+    margin-top: 11px;
+}
+
+.headerTitle2{
+    margin-right: 120px;
+    font-family: 'Inter';
+    font-size: 26px;
+    margin-top: 11px;
+}
+
+.createUserContent{
+    display: flex;
+}
+
+.containerImage{
+    display: flex;
+}
+
+.userIcon{
+    margin: 120px 0px 0px 75px;
+    width: 327px;
+    height: 338px;
+}
+
+.createUserForm{
+    margin: 121px 0px 0px 103px;
+    font-family: 'Inter';
+    font-size: 28px;
+}
+
+.createUserForm > input {
+    width: 440px;
+    height: 46px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 0px 0px 0px 15px;
+    border: none;
+    border-radius: 16px;
+    font-size: 24px;
+    font-family: 'Inter';
+}
+
+.createUserButton {
+    width: 151px;
+    height: 47px;
+    margin: 87px 0px 0px 797px;
+    background-color: rgba(32, 122, 178, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 16px;
+    font-size: 28px;
+    font-family: 'Inter';
+}
+
+.seeUserContainer{
+    margin: 58px 0px 0px 58px;
+    overflow: scroll;
+    max-height: 600px;
+}
+
+.userCardContainer{
+    width: 887px;
+    height: 98px;
+    padding: 7px 0px 0px 24px;
+    margin: 0px 0px 37px 0px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(255, 254, 254, 1);
+    display: flex;
+}
+
+.seeUserIcon{
+    width: 94px;
+    height: 85px;
+    margin: 0px 50px 0px 0px;
+}
+
+.dataContainer{
+    width: 550.5px;
+    overflow: hidden;
+}
+
+.topHalf{
+    margin: 0px 0px 10px 0px;
+}
+
+.userName{
+    font-family: 'Inter';
+    font-size: 34px;
+}
+
+.bottomHalf{
+    display: flex;
+    font-family: 'Inter';
+    font-size: 23px;
+}
+
+.userEmail{
+    margin: 0px 21px 0px 0px;
+}
+
+.userCardButtonContainer{
+    margin: 7px 0px 0px 50px;
+}
+
+.userCardButtonContainer > button{
+    width: 92px;
+    height: 31px;
+    font-family: 'Inter';
+    font-size: 20px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.userCardEditButton{
+    margin: 0px 0px 15px 0px;
+}
