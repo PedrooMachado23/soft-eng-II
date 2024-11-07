@@ -1,3 +1,7 @@
+# ATTENTION
+
+This application was made based on 1440x1024 resolution
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
