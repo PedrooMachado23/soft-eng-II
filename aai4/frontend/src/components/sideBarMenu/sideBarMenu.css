@@ -1,0 +1,43 @@
+.sideBarContainer{
+    width: 231px;
+    height: 909px;
+    background-color: var(--lightBlue);
+    box-shadow: 4px 4px 7px var(--black25);
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonMenuContainer{
+    height: 198px;
+    margin: 0px 0px 0px 36px;
+    padding: 304px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttonMenuContainer > button {
+    width: 160px;
+    height: 36px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding: 0px 10px;
+    border-radius: 16px;
+}
+
+.logoutButton{
+    width: 84px;
+    height: 41px;
+    margin-top: auto;
+    margin-left: 96px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    border: solid var(--blue) 1px;
+    border-radius: 16px;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: var(--blue)
+}

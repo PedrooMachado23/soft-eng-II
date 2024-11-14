@@ -1,0 +1,112 @@
+.tasksForm {
+    margin: 38px 0px 0px 58px;
+    font-size: 28px;
+}
+
+.inputNome{
+    width: 886px;
+    height: 51px;
+    margin: 14px 0px 25px 0px;
+}
+
+.middleFormContainer{
+    display: flex;
+}
+
+.section1{
+    margin: 0px 68px 0px 0px;
+}
+
+.inputUsuarios{
+    width: 397px;
+    height: 51px;
+    margin: 14px 0px 25px 0px;
+}
+
+.inputPontos{
+    width: 397px;
+    height: 51px;
+    margin: 14px 0px 0px 0px;
+}
+
+.inputDescricao{
+    width: 890px;
+    height: 204px;
+    margin: 14px 0px 15px 0px;
+}
+
+.createTaskButton{
+    margin: 69px 0px 0px 797px;
+    width: 151px;
+    height: 47px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--blue);
+    font-family: 'Inter';
+    font-size: 28px;
+    color: var(--white)
+}
+
+.seeTaskContainer{
+    margin: 50px 0px 0px 58px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.taskCardContainer{
+    width: 830px;
+    max-width: 830px;
+    height: 243px;
+    background-color: var(--white);
+    border-radius: 16px;
+    margin: 0px 0px 108px 0px;
+}
+
+.taskCardButtonContainer > button{
+    width: 113px;
+    height: 36px;
+    background-color: var(--gray);
+    border: none;
+    border-radius: 16px;
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.taskCardHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 830px;
+    height: 70px;
+    background-color: var(--blue);
+    border-radius: 16px 16px 0px 0px;
+    font-size: 32px;
+    color: var(--white);
+}
+
+.taskTitle{
+    white-space: nowrap;
+    max-width: 550px;
+    overflow-x: scroll;
+    padding: 15px;
+}
+
+.taskPoints{
+    padding: 0px 15px;
+}
+
+.taskCardDescriptionContainer{
+    padding: 20px;
+    max-height: 69px;
+    height: 69px;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: var(--blue);
+    margin: 0px 0px 5px 0px;
+    text-align: start;
+    overflow-y: scroll;
+}
+
+.deleteTaskButton{
+    margin: 0px 29px 0px 562px;
+}

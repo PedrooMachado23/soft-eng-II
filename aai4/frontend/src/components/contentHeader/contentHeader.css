@@ -1,0 +1,32 @@
+.contentHeaderContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.contentHeaderVerticalBar{
+    position: relative;
+    top: 16.5%;
+    width: 1px;
+    height: 65px;
+    background-color: var(--black);
+    margin: 13px 15px 0 15px;
+}
+
+.contentHeaderButton{
+    background-color: var(--grey);
+    margin-top: 11px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 16px;
+    font-size: 26px;
+}
+
+.contentHeaderTitle1{
+    margin-left: 120px;
+}
+
+.contentHeaderTitle2{
+    margin-right: 120px;
+}

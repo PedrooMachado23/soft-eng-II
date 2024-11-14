@@ -1,0 +1,60 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    /* colors */
+    --black: rgba(0, 0, 0, 1);
+    --black25: rgba(0, 0, 0, 0.25);
+    --white: rgba(255, 255, 255, 1);
+    --gray: rgba(217, 217, 217, 1);
+    --blue: rgba(32, 122, 178, 1);
+    --lightBlue: rgba(224, 236, 244, 1);
+}
+
+/* classes */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-end: 0px
+}
+
+.inputPattern{
+    border: none;
+    border-radius: 16px;
+    background-color: var(--white);
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+.contentPattern{
+    display: flex;
+}
+
+.mainContentPattern{
+    margin: auto;
+    width: 998px;
+    height: 804px;
+    background-color: var(--gray);
+    border-radius: 16px;
+}
+
+.transitionButton{
+    transition: transform 0.5s ease-out, background-color .3s ease-out, color .001s ease-out;
+}
+
+.transitionButton:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.activeButtonPattern{
+    background-color: var(--blue) !important;
+    color: var(--white);
+}

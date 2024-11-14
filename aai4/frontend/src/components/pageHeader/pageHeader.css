@@ -1,0 +1,18 @@
+.headerContainer{
+    height: 11.2vh;
+    padding: 0px 45px 0px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px var(--black25);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.pageHeaderTitle {
+    font-size: 64px;
+}
+
+.pageHeaderSection {
+    font-size: 32px;
+}

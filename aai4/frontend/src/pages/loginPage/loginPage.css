@@ -1,0 +1,42 @@
+.loginPageContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginContainer{
+    margin: 250px auto 0px auto;
+}
+
+.loginForm{
+    font-size: 20px;
+}
+
+.loginForm > label{
+    margin-left: 5px;
+}
+
+.loginForm > input{
+    width: 314px;
+    height: 48px;
+    margin: 8px 0px;
+    border: none;
+    background-color: var(--gray);
+}
+
+.loginButtonContainer{
+    margin: 65px auto 0px auto;
+}
+
+.loginButtonContainer > button{
+    width: 132px;
+    height: 48px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 20px;
+}
+
+.registerButton {
+    margin-right: 70px;
+}

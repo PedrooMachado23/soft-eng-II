@@ -6,7 +6,7 @@ import './index.css'
 import path from 'path';
 import CreateUserPage from './pages/admin/createUserPage/createUserPage';
 import CreateTaskPage from './pages/admin/createTaskPage/createTaskPage';
-import LoginAdmPage from './pages/admin/longinAdmPage/loginAdmPage';
+import LoginAdmPage from './pages/admin/loginAdmPage/loginAdmPage';
 import ProfilePage from './pages/admin/profilePage/profilePage';
 
 createRoot(document.getElementById('root')!).render(
