@@ -7,6 +7,7 @@ class Task extends Model{
     public nome!: string;
     public pontos!: number;
     public descricao!: string;
+    public task!: TaskUser[];
 }
 
 Task.init({

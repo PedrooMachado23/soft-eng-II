@@ -3,12 +3,13 @@ import PageHeader from "../../../components/pageHeader/pageHeader";
 import SideBarMenu from "../../../components/sideBarMenu/sideBarMenu";
 import './adminTasksPage.css'
 import ContentHeader from "../../../components/contentHeader/contentHeader";
-import { alterTask, createTask, deleteTask, fetchTasks } from "./apiTask";
+import { alterTask, createTask, createTaskUser, deleteTask, fetchTasks, fetchUserTasks } from "./apiTask";
 
 function AdminTasksPage(){
     type Task = {
         id: number,
         nome: string,
+        usuarios: string,
         pontos: string,
         descricao: string
     }
@@ -19,22 +20,29 @@ function AdminTasksPage(){
     const [newTask, setNewTask] = useState<Task>({
         id: 0,
         nome: '',
+        usuarios: '',
         pontos: '',
         descricao: ''
     })
+    const [taskUsers, setTaskUsers] = useState([])
 
     const loadTasks = async() => {
         const tasksData = await fetchTasks()
-        setTasks(tasksData)
+
+        const updatedTasks = await Promise.all(tasksData.map(async(task: Task) => {
+            const names = await fetchUserTasks(task.id)
+            console.log(task.id, names)
+            task.usuarios = names
+            return task
+        }))
+
+        setTasks(updatedTasks)
     }
 
     useEffect(() => {
         if (tasks.length === 0) {
             loadTasks()
         }
-    }, [activeContent])
-
-    useEffect(() => {
         if (editingTask && activeContent === 2) {
             setEditingTask(null)
         }
@@ -78,12 +86,14 @@ function AdminTasksPage(){
                 if (response.status !== 201) {
                     return
                 }
-                setNewTask({id: 0, nome: '', pontos: '', descricao: ''})
+                setNewTask({id: 0, nome: '', usuarios: '', pontos: '', descricao: ''})
             } catch (error) {
                 window.alert('Erro ao criar atividade')
                 return
             }
         }
+        const response = await createTaskUser(task.nome, task.usuarios)
+        window.alert(response.data.message)
         loadTasks()
         setActiveContent(2)
     }
@@ -128,7 +138,10 @@ function AdminTasksPage(){
                                 <div className="middleFormContainer">
                                     <div className="section1">
                                         <label htmlFor="">Usuários:</label> <br />
-                                        <input type="text" className="inputPattern inputUsuarios"/>
+                                        <input type="text" className="inputPattern inputUsuarios"
+                                        value={editingTask? editingTask.usuarios : newTask.usuarios}
+                                        onChange={editingTask? (e) => setEditingTask({...editingTask, usuarios: e.target.value}) : (e) => setNewTask({...newTask, usuarios: e.target.value})}
+                                        />
                                     </div>
                                     <div className="section2">
                                         <label htmlFor="">Pontos:</label> <br />
@@ -163,6 +176,9 @@ function AdminTasksPage(){
                                     <p>{task.descricao}</p>
                                 </div>
                                 <div className="taskCardButtonContainer">
+                                    <div className="cardUsersListContainer">
+                                        <p>Enviado para: {task.usuarios}</p>
+                                    </div>
                                     <button className="deleteTaskButton" onClick={() => handleDeletTaskClick(task)}>Deletar</button>
                                     <button className="editTaskButton" onClick={() => handleEditTaskClick(task.id)}>Editar</button>
                                 </div>

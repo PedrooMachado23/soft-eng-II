@@ -11,9 +11,34 @@ export const fetchTasks = async() => {
     }
 }
 
+export const fetchUserTasks = async(taskId: number) => {
+    try {
+        const response = await axios.get(`${base_url}/getTaskWithUsers/${taskId}`)
+        if (response) {
+            const userNames = response.data.sort()
+            return userNames.join(', ')
+        }
+    }catch (error) {
+        console.error(`Erro ao relacionar task com usuários: ${error}`)
+    }
+}
+
 export const createTask = async(taskData: any) => {
     try {
         const response = await axios.post(`${base_url}/createTask`, taskData)
+        return response
+    } catch (error) {
+        console.error(`Erro ao criar task: ${error}`)
+        throw error
+    }
+}
+
+export const createTaskUser = async(taskName: string, usersString: string) => {
+    try{
+        const userNames = usersString.split(', ')
+        const taskUserData = {name: taskName, userNames: userNames}
+
+        const response = await axios.post(`${base_url}/createTaskUser`, taskUserData)
         return response
     } catch (error) {
         console.error(`Erro ao criar task: ${error}`)

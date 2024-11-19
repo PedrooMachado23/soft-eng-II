@@ -48,9 +48,10 @@
 }
 
 .seeTaskContainer{
-    margin: 50px 0px 0px 58px;
+    margin: 50px 0px 0px 0px;
     max-height: 600px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    display: block;
 }
 
 .taskCardContainer{
@@ -59,7 +60,11 @@
     height: 243px;
     background-color: var(--white);
     border-radius: 16px;
-    margin: 0px 0px 108px 0px;
+    margin: 0px auto 65px auto;
+}
+
+.taskCardButtonContainer {
+    display: flex;
 }
 
 .taskCardButtonContainer > button{
@@ -70,6 +75,21 @@
     border-radius: 16px;
     font-size: 20px;
     color: var(--blue);
+}
+
+.cardUsersListContainer{
+    display: flex;
+    width: 470px;
+    max-width: 470px;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    text-overflow: ellipsis;
+    color: var(--blue);
+    background-color: var(--gray);
+    align-items: center;
+    border-radius: 16px;
 }
 
 .taskCardHeader{
@@ -87,7 +107,7 @@
 .taskTitle{
     white-space: nowrap;
     max-width: 550px;
-    overflow-x: scroll;
+    overflow-x: auto;
     padding: 15px;
 }
 
@@ -104,9 +124,9 @@
     color: var(--blue);
     margin: 0px 0px 5px 0px;
     text-align: start;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .deleteTaskButton{
-    margin: 0px 29px 0px 562px;
+    margin: 0px 29px 0px 42px;
 }

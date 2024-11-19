@@ -3,15 +3,16 @@ import User from "../models/user.Model";
 
 export const createUserService = async(id_admin: number, name: string, email: string, phone: number, password: string) => {
     try {
-        await User.create({
+         const user = await User.create({
             id_admin: id_admin,
             nome: name,
             email: email,
             telefone: phone,
             senha: password
         })
+        return user
     } catch (error) {
-       throw new Error(`Erro ao executar serviço de listar todos os usuários: ${error}`)
+       throw new Error(`Erro ao executar serviço de listar cadastrar usuário: ${error}`)
     }
 }
 

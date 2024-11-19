@@ -1,7 +1,6 @@
 import Task from "../models/taskModel";
 
 export const createTaskService = async(userData: any) => {
-    console.log(userData)
     try {
         const task = await Task.create({
             nome: userData.nome,
@@ -45,5 +44,14 @@ export const deleteTaskService = async(taskId: number) => {
         await Task.destroy({where: {id: taskId}})
     } catch (error) {
         throw new Error(`Erro ao executar o serviço de deletar todas as tasks: ${error}`)
+    }
+}
+
+export const listOneTaskService = async(param: any) => {
+    try {
+        const task = Task.findOne({where: param})
+        return task
+    } catch (error) {
+        throw new Error(`Erro ao executar o serviço de listar uma task: ${error}`)
     }
 }

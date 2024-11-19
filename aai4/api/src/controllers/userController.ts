@@ -1,5 +1,5 @@
 import User from "../models/user.Model"
-import { alterUserService, deleteUserService, findAllUsersService, findOneUserService } from "../services/userService"
+import { alterUserService, createUserService, deleteUserService, findAllUsersService, findOneUserService } from "../services/userService"
 import { Request, Response } from "express"
 
 export const createUserControl = async (req: Request, res: Response) => {
@@ -9,13 +9,7 @@ export const createUserControl = async (req: Request, res: Response) => {
         let newUser
 
         if (!userFind){
-            newUser = await User.create({
-                id_admin: id_admin,
-                nome: name,
-                email: email,
-                telefone: phone,
-                senha: password
-            })
+            const newUser = await createUserService(id_admin, name, email, phone, password)
             res.status(201).json({message: `Usuário ${newUser.nome} cadastrado com sucesso!`})
             
         } else {
